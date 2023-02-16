@@ -1,0 +1,515 @@
+@font-face {
+    font-family: "Geometria";
+    src: url("~@/assets/fonts/geometria/Geometria-Medium.woff2") format("woff2"),
+         url("~@/assets/fonts/geometria/Geometria-Medium.woff") format("woff");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 500;
+  }
+  
+@font-face {
+    font-family: "Geometria";
+    src: url("~@/assets/fonts/geometria/Geometria-Bold.woff2") format("woff2"),
+         url("~@/assets/fonts/geometria/Geometria-Bold.woff") format("woff");
+    font-display: swap;
+    font-style: normal;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: #6C6C6C;
+}
+  
+  a:hover {
+    color: #C0965C;
+}
+  
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    color: #fff;
+}
+  
+p {
+    margin: 0;
+    color: #6C6C6C;
+}
+  
+li {
+    list-style-type: none;
+}
+  
+span {
+    color: #6C6C6C;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.f-wrapper {
+    display: flex;
+}
+
+.container-wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container {
+  transition: all ease .5s;
+}
+
+
+.burger {
+    display: block;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    margin: 0;
+    margin-right: 73px;
+    width: 35px;
+    height: 35px;
+    font-size: 0;
+    box-shadow: none;
+    background-color: #0E0E0E;
+
+    span {
+        position: absolute;
+        width: 25px;
+        height: 2px;
+        background-color: #C0965C;
+        left: 5px;
+        transition: transform .5s, opacity .5s, background-color .5s;
+    }
+    span:nth-child(2) {
+        width: 20px;
+    }
+    span:nth-child(1) {
+        transform: translateY(-10px);
+    }
+    span:nth-child(3) {
+        transform: translateY(10px);
+    }
+}
+ 
+.open .burger {
+    span:nth-child(1) {
+      transform: translateY(0) rotate(45deg);
+    }
+    span:nth-child(2) {
+      opacity: 0;
+    }
+    span:nth-child(3) {
+      transform: translateY(0) rotate(-45deg);
+    }
+  }
+
+  .forms-wrapper {
+    display: block;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100%;
+    margin-top: -100vw;
+    background-color: #000;
+    transition: all ease .5s;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.forms.forms-wrapper{
+    margin-top: 0;
+}
+
+.form-container {
+    width: 690px;
+    margin: auto;
+    padding: 20px 30px;
+}
+
+.form-header{
+ display: flex;
+ margin-bottom: 50px;
+
+}
+
+.form-header .section-header-text{
+  margin: 0 auto;
+  font-size: 30px;
+}
+.close-forms {
+  display: block;
+  position: relative;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  margin: 0;
+  width: 25px;
+  height: 25px;
+  font-size: 0;
+  box-shadow: none;
+  background-color: #000;
+    span {
+      position: absolute;
+      width: 25px;
+      height: 2px;
+      background: #6C6C6C;
+      left: 0;
+      transition: transform .5s, opacity .5s, background-color .5s;
+  }
+
+      span:nth-child(1) {
+        transform: translateY(0) rotate(45deg);
+      }
+      span:nth-child(2) {
+        transform: translateY(0) rotate(-45deg);
+      }
+}
+
+.list-wrapper {
+    display: block;
+    position: fixed;
+    z-index: 100;
+    left: 0px;
+    top: 0;
+    bottom: 0;
+    width: 350px;
+    height: 100%;
+    margin-left: -350px;
+    padding-top: 80px;
+    padding-left: 50px;
+    background-color: #1C1C1B;
+    transition: all ease .5s;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.nav__item {
+  margin-bottom: 25px;
+}
+
+.nav__item:last-child {
+  margin-bottom: 500px;
+}
+
+.nav__link {
+  color: #fff;
+}
+
+.open.container {
+    margin-left: 100px;
+}
+
+.open .list-wrapper {
+    margin-left: 0;
+}
+
+.wrapper-f{
+    display: flex;
+    
+}
+
+.main {
+    margin: 30px auto;
+    position: relative;
+}
+
+.main-info {
+  margin-bottom: 270px;
+    .text {
+      width: 70%;
+    }
+    .text-header {
+      margin-bottom: 85px;
+      font-size: 96px;
+    }
+    .about-card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 24%;
+    }
+}
+
+.content{
+    padding-left: 110px;    
+}
+
+
+
+  .background-img{
+    position: absolute;
+    background: url(../assets/img/Credit-card-header.png) no-repeat;
+    background-size: cover;
+    top: 50px;
+    left: 400px;
+  }
+    
+
+  
+  
+  .article__main {
+    margin-bottom: 35px;
+    width: 50%;
+  }
+  
+  .article-img {
+    margin: 0 20px 20px 0;
+  }
+
+  .text-style-color {
+    color: #C0965C;
+  }
+    
+  .text-style-big {
+    font-size: 36px;
+    font-weight: 700;
+
+  }
+  
+  .article__text-description {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #6C6C6C;
+  }
+  
+  .btn{
+    padding: 26px 45px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #C0965C;
+  }
+  
+  .travel-info {
+    margin-bottom: 160px;
+    .article {
+      width: 20%;
+    }
+  }
+  
+  .section-header-wrap {
+    margin-bottom: 81px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .section-header-text{
+    font-size: 30px;
+  }
+  
+  .travel-info__description {
+    width: 50%;
+    text-align: center;
+  }
+  
+  .section-content-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+  }
+  
+  .article-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 34px;
+  }
+  
+  .cashback-info {
+    margin-bottom: 140px;
+
+    .article__header {
+      margin-bottom: 7px;
+    }
+  }
+  
+  .cashback-info .article {
+    width: 26%;
+  }
+  
+  .article {
+    margin-bottom: 38px;
+  }
+  
+  .page__logo {
+    margin: 7px 28px 0 0;
+  }
+  
+  .assistant-info {
+    margin-bottom: 180px;
+  }
+  
+  .assistant-info__description {
+    text-align: center;
+    color: #fff;
+  }
+  
+  .assistant-info__content {
+    margin-left: 15%;
+    margin-right: auto;
+    width: 20%;
+  }
+  
+  .assistant-info__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .assistant-info__wrap .article {
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .assistant-info__wrap .article-img {
+    margin-bottom: 0;
+  }
+  
+  .assistant-info__img {
+    margin-left: auto;
+  }
+  
+  .issue-card__about-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .issue-card .article__main{
+    width: auto;
+  }
+  
+  .article__issue-card {
+    margin-bottom: 80px;
+  }
+  
+  .issue-info__wrap {
+    display: flex;
+  }
+  
+  .card-info__wrap {
+    margin-left: 100px;
+  }
+  
+  .radio-reset {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  
+  .style-radio-btn {
+    margin-right: 42px;
+    margin-bottom: 50px;
+    font-size: 14px;
+    color: #6C6C6C;
+    background-color: #0E0E0E
+  }
+  
+  .style-radio-btn:hover,
+  .style-radio-btn:focus {
+    color: #C0965C;
+  }
+  
+  .card-info__wrap .btn {
+    margin-top: 50px;
+    margin-bottom: 65px;
+  }
+  
+  .price-wrap {
+    margin-bottom: 27px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .price-description,
+  .price {
+   width: 45%;
+   font-size: 14px;
+   line-height: 26px;
+  }
+  
+  .price-description {
+    margin-right: 25px;
+    color: #6C6C6C;
+  }
+  
+  .price {
+    color: #bbb;
+  }
+  
+  .all-card-description {
+    color: #C0965C;
+    border-bottom: 1px dashed #C0965C;
+  }
+  
+  .footer {
+    margin-top: 141px;
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between
+  }
+  
+  .footer-text {
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  .logo__wrap{
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-links {
+    display: flex;
+    margin-right: 15px;
+  }
+
+  .footer-links-list {
+    margin-top: 0;
+  }
+  
+  .footer-links-list:first-child{
+
+    margin-right: 80px;
+  }
+  
+  .link-item {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+  }
+  
+  .contact-link {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-link {
+    margin-bottom: 12px;
+  }
+  
+  .contact-link span{
+    font-size: 14px;
+  }
+  
+  .contact-link a{
+    font-size: 24px;
+    line-height: 45px;
+    color: #bbb;
+  }
+  
